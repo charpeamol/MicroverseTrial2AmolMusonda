@@ -9,6 +9,55 @@
   <body>
     <h1>Hello World,we are software developers!
     </h1>
+    <div class="container">
+      <header class="header">
+        <h1 id="title"> Zambian Health Survey <Form></Form></h1>
+        <p id="description"> Please Provide your honest feedback to improve Zambian health goverence </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label"> Name</label>
+          <input type="text" id="name" name="name" placeholder="Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label"> Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label"> Age(Compulsory)</label>
+          <input type="number" id="number" name="number" placeholder="Age" min=10 max=99>
+        </div>
+        <div class="form-group">
+          <p>What kind of diseases have suffered before ? </p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value> which disease have gone thought last month? </option>
+            <option value="Malariya"> Malariya</option>
+            <option value="Dengue"> Dengue</option>
+            <option value="cholera"> cholera</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>How will git rid off diseases </p>
+  
+          <label><input type="radio" class="input_radio" name="user" value="Keep House Clean">Keep House Clean</label>
+          <label><input type="radio" class="input_radio" name="user" value="Wash your hands before yopu eat">Wash your hands before yopu eat</label>
+          <label> <input type="radio" class="input_radio" name="user" value="Routine Checkup with your doctor once a month">Routine Checkup with your doctor once a month</label>
+          <div class="form-group">
+          <p>Have you vaccinated with covid vaccine</p>
+             <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value> vaccination Program </option>
+            <option value=" Full Vaccinated ">  Full Vaccinated  </option>
+            <option value=" Partially Vaccinated"> Partially Vaccinated </option>
+            <option value="not enough vaccines available"> not enough vaccines available </option>
+          </select>
+          </div>
+          <div class="form-group">
+            <p> Any Suugestion Would Like to give  Government  <span class="clue"> (check all that apply)</p>
+          
+          <label><input type="checkbox" class="input_checkbox" value="fix Open Defication as soon as possible" name="prefer">fix Open Defication as soon as possible </label>
+          <label><input type="checkbox" class ="input_checkbox" name="prefer" value="Need More Healthcare Workers in Remote Area">Need More Healthcare Workers in Remote Area </label>
+          <label><input type="checkbox" class="input_checkbox" name="prefer" value="Healthcare Budgest Need to Increase">Healthcare Budgest Need to Increase </label>
+          </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--
